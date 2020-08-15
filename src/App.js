@@ -1,22 +1,23 @@
 import React from 'react';
 import Layout from './components/Layout'
 import './styles/generated.css';
-import Card from './components/Card';
+import Card, { YellowCard, AlertableCard } from './components/Card';
+import CardList from './components/CardList';
 
 function App() {
   return (
     <Layout>
-      <ul className="grid md:grid-cols-3 gap-4 my-4">
+      <CardList>
+        <Card />
+        <Card />
+        <YellowCard />
+        <Card />
+        <AlertableCard />
         <Card />
         <Card />
         <Card />
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </ul>
+      </CardList>
     </Layout>
   );
 }
